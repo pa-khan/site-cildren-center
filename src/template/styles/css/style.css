@@ -56,7 +56,7 @@ img {
   outline: none; }
 
 /* Grid */
-.container {
+.case {
   position: relative;
   width: 1170px;
   padding-left: 15px;
@@ -140,6 +140,6 @@ img {
 .right {
   float: right; }
 
-.mid, .container {
+.mid, .case {
   margin-left: auto;
   margin-right: auto; }
