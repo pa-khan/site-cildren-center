@@ -24,7 +24,21 @@ $(document).ready(function($) {
     {
       // centerMode: true,
       // variableWidth: true,
-      slidesToShow: 4
+      slidesToShow: 4,
+      responsive: [{
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3
+        }}, {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }}, {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1
+        }}
+      ]
     }
   );
 });

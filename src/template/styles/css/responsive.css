@@ -1,11 +1,210 @@
-@media screen and (max-width: 1199px) {
-  .container {
-    width: 950px; } }
+@media screen and (max-width: 1210px) {
+  img {
+    max-width: 100%; }
+  .case {
+    width: 950px; }
+  body {
+    background: #d4d5dd; }
+  .header_main {
+    background: none; }
+  .header__nav {
+    margin-left: 0; }
+    .header__nav a {
+      padding-left: 15px;
+      padding-right: 15px; }
+  .header__contacts {
+    width: 100%; }
+  .banner {
+    background: none;
+    min-height: 1px; }
+  .main-plugins {
+    padding-top: 30px; }
+  .plugin__title-img, .plugin__square {
+    display: none; }
+  .plugin__title {
+    text-align: center;
+    width: 100%; }
+  .plugin__item:after {
+    display: none; }
+  .main {
+    padding-bottom: 50px; }
+  .plugin__item_vk {
+    display: none; }
+  .plugin__item_twitter, .plugin__item_anons {
+    width: 50%; }
+  .plugin__item_xs {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 22px; }
+    .plugin__item_xs .plugin__title {
+      width: 100%; }
+  .footer {
+    padding-bottom: 40px; }
+  .anonim__form {
+    margin-top: 50px; }
+  .clubs__blocks {
+    display: none; }
+  .clubs__list {
+    text-align: center; }
+  .clubs__item {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 282px;
+    height: 140px;
+    text-align: left; }
+  .clubs__name, .clubs__desc {
+    margin-bottom: 8px; }
+  .clubs__data {
+    padding-right: 5px; } }
 
 @media screen and (max-width: 970px) {
-  .container {
-    width: 750px; } }
+  .case {
+    width: 750px; }
+  .header {
+    padding-top: 10px; }
+    .header__logo, .header__content {
+      float: none;
+      width: 100%; }
+    .header__logo {
+      margin-bottom: 10px; }
+      .header__logo img {
+        margin-left: auto;
+        margin-right: auto; }
+    .header__contacts {
+      max-width: none;
+      margin-bottom: 20px; }
+    .header__nav {
+      text-align: center; }
+  .content {
+    margin-top: 20px; }
+  .footer {
+    padding-bottom: 22px; }
+    .footer__left {
+      width: 65%; }
+    .footer__right {
+      width: 35%; }
+    .footer__mid {
+      display: none; } }
 
 @media screen and (max-width: 767px) {
-  .container {
-    width: 100%; } }
+  .case {
+    width: 100%; }
+  .header_main {
+    margin-bottom: 0; }
+  .header__contacts p {
+    display: block; }
+    .header__contacts p:first-of-type {
+      margin-bottom: 5px;
+      margin-right: 0; }
+  .header__nav li {
+    width: 100%; }
+  .plugin__item_twitter, .plugin__item_anons {
+    width: 100%;
+    margin-bottom: 25px; }
+    .plugin__item_twitter:last-of-type, .plugin__item_anons:last-of-type {
+      margin-bottom: 0; }
+  .content__wrap {
+    padding: 15px; }
+  .banner {
+    padding-top: 20px; }
+    .banner .slick-dots {
+      bottom: 25px; }
+      .banner .slick-dots button {
+        width: 15px;
+        height: 15px; }
+  .main {
+    padding-bottom: 30px; }
+  .footer {
+    padding-top: 15px; }
+    .footer__left, .footer__right {
+      float: none;
+      width: 100%; }
+    .footer__logo, .footer__contacts, .footer__logo img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .footer__contacts {
+      padding-top: 5px; }
+    .footer__socials {
+      text-align: center; }
+  .pt20 {
+    padding-top: 0; }
+  .docs {
+    padding-top: 0; }
+  .txt_pl {
+    padding-left: 0; }
+  .history__list {
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px; }
+  .history__date {
+    width: 100%; }
+    .history__date span {
+      font-size: inherit; }
+  .history__txt {
+    padding-left: 0; }
+  .main-title {
+    margin-bottom: 15px; }
+  .persons_only {
+    padding-left: 0;
+    margin-top: 35px; }
+  .persona__img, .persona__content {
+    display: block; }
+  .persona__img {
+    margin-bottom: 8px !important; }
+  .anonim__title {
+    padding-left: 0;
+    margin-bottom: 0; }
+  .anonim__form {
+    margin-left: 0;
+    margin-top: 15px;
+    padding: 20px; }
+    .anonim__form:before {
+      display: none; }
+  .club {
+    padding: 15px; }
+  .gallery {
+    margin-top: 30px; }
+    .gallery .slick-prev {
+      left: 0; }
+    .gallery .slick-next {
+      right: 0; }
+  .gallery__list {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; }
+  .map_minus {
+    margin-left: 0;
+    margin-right: 0; }
+  .main-color, .main-return {
+    display: none; }
+  .map__data {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 20px; }
+    .map__data .plugin__item {
+      display: none; }
+  .gallery_pl {
+    padding-left: 0;
+    margin-top: 10px; }
+  .job__persons {
+    padding-left: 0; }
+  .persona__content {
+    padding-left: 0; }
+  .main-title {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+    padding-top: 5px; }
+    .main-title:before, .main-title:after {
+      display: none; } }
