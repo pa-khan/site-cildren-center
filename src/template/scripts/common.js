@@ -8,6 +8,7 @@ $(document).ready(function($) {
 	});
 
   $('.blocks__item').hover(function () {
+    $('.blocks__item').removeClass('blocks__item_active')
     var attr = $(this).attr('data-club-item');
 
     $('.clubs__item').removeClass('clubs__item_active');
@@ -15,9 +16,21 @@ $(document).ready(function($) {
 
   })
 
-  $('.club__toggle').click(function () {
-    $('.club').toggleClass('club_toggle');
-    $('.club__toggle-icon').toggleClass('club__toggle-icon-rotate');
+  $('.clubs__item').hover(function () {
+    $('.clubs__item').removeClass('clubs__item_active')
+    var attr = $(this).index() + 1;
+    console.log(attr);
+    $('.blocks__item').removeClass('blocks__item_active');
+    $('.blocks__item[data-club-item = ' + attr + ']').addClass('blocks__item_active');
+
+  })
+
+  $('.blocks__item').hover(function () {
+    var attr = $(this).attr('data-club-item');
+
+    $('.clubs__item').removeClass('clubs__item_active');
+    $('.clubs__item:nth-of-type(' + attr + ')').addClass('clubs__item_active');
+
   })
 
   $('.gallery__list').slick(

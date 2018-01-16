@@ -837,25 +837,25 @@ img {
       margin-left: 68px; }
     .blocks__item:nth-of-type(15) {
       margin-left: 136px; }
-    .blocks__item_red-dark:hover {
+    .blocks__item_red-dark:hover, .blocks__item_red-dark.blocks__item_active {
       background: #8f0018; }
-    .blocks__item_green-light:hover {
+    .blocks__item_green-light:hover, .blocks__item_green-light.blocks__item_active {
       background: #00b66f; }
-    .blocks__item_orange:hover {
+    .blocks__item_orange:hover, .blocks__item_orange.blocks__item_active {
       background: #fa9900; }
-    .blocks__item_yellow-dark:hover {
+    .blocks__item_yellow-dark:hover, .blocks__item_yellow-dark.blocks__item_active {
       background: #c9e51e; }
-    .blocks__item_red:hover {
+    .blocks__item_red:hover, .blocks__item_red.blocks__item_active {
       background: #f11932; }
-    .blocks__item_blue:hover {
+    .blocks__item_blue:hover, .blocks__item_blue.blocks__item_active {
       background: #386bb1; }
-    .blocks__item_yellow:hover {
+    .blocks__item_yellow:hover, .blocks__item_yellow.blocks__item_active {
       background: #f1f433; }
-    .blocks__item_green:hover {
+    .blocks__item_green:hover, .blocks__item_green.blocks__item_active {
       background: #006534; }
-    .blocks__item_blue-light:hover {
+    .blocks__item_blue-light:hover, .blocks__item_blue-light.blocks__item_active {
       background: #39a7dd; }
-    .blocks__item_violet:hover {
+    .blocks__item_violet:hover, .blocks__item_violet.blocks__item_active {
       background: #302569; }
 
 .map {
@@ -1200,7 +1200,7 @@ img {
 .footer {
   color: #ffffff;
   padding-top: 22px;
-  padding-bottom: 252px;
+  padding-bottom: 67px;
   background: url("../../img/bg/footer.png") no-repeat center top; }
   .footer a {
     color: #ffffff; }
