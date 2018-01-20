@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+
+	<header class="header">
+		<div class="case">
+      <div class="row">
+        <div class="header__logo col col-d-4"><a href="index.html"><img src="upload/logo/logo-header.png" alt=""></a></div>
+        <div class="header__content col col-d-8">
+          <div class="header__contacts">
+            <p>МКУ «Молодежный центр» г. Иваново</p>
+            <p><a href="">8 (4932) 35-06-54</a>, <a href="">93-98-10</a></p>
+          </div>
+          <div class="header__nav">
+            <ul>
+              <li><a href="">О центре</a></li>
+              <li class="selected"><a href="">Клубы</a></li>
+              <li><a href="">Трудоустройство</a></li>
+              <li><a href="">Ресурсный центр</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header__mobile-btn"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+		</div>
+	</header>
+
+	<main class="main">
+    <div class="case">
+      <div class="content">
+        <div class="content__wrap row">
+          <div class="col col-d-12">
+            <div class="main-title">Контакты</div>
+            <div class="map map_full">
+              <div class="map__wrap" id="map"></div>
+              <div class="map__data">
+                <div class="map__contacts">
+                  <p><strong>МКУ “Молодежный центр”:</strong></p>
+                  <p><i class="icon icon-marker-small"></i>Иваново, ул. Энтузиастов д.2</p>
+                  <p><i class="icon icon-email"></i><a href="mailto:molcentre@mail.ru">molcentre@mail.ru</a></p>
+                </div>
+                <a href="#" class="plugin__item plugin__item_vk plugin__item_xs">
+                  <div class="plugin__head">
+                    <div class="plugin__square"><span></span><span></span><span></span></div>
+                    <div class="plugin__title">ВКонтакте</div>
+                    <div class="plugin__title-img"><img src="upload/text/vk.png" alt=""></div>
+                  </div>
+                </a>
+                <a href="#" class="plugin__item plugin__item_twitter plugin__item_xs">
+                  <div class="plugin__head">
+                    <div class="plugin__square"><span></span><span></span><span></span></div>
+                    <div class="plugin__title">Twitter</div>
+                    <div class="plugin__title-img"><img src="upload/text/twitter.png" alt=""></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <script>
+              function initMap() {
+                var uluru = {lat: -25.363, lng: 131.044};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 16,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map,
+                  icon: {
+                    url: "upload/marker.png",
+                    scaledSize: new google.maps.Size(32, 46)
+                  }
+                });
+              }
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFlhVZHx_hZG67ZDi5BBb-O0aqR8ofwUs&callback=initMap">
+            </script>
+            <div class="club__persons persons">
+              <div class="persons__line">
+                <div class="persons__title">Руководитель: </div>
+                <div class="row">
+                  <div class="col col-d-6 col-b-12">
+                    <div class="persons__list">
+                      <div class="persona">
+                        <div class="persona__img"><img src="upload/persons/1.png" alt=""></div>
+                        <div class="persona__content">
+                          <div class="persona__name">Иванов Иван Иванович</div>
+                          <div class="persona__position">генеральный директор</div>
+                          <div class="persona__txt">
+                            <p>тел. <a href="tel:84932345678">8 (4932) 34-56-78</a></p>
+                            <p>e-mail: <a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></p>
+                            <p>Перечисление контактных данных</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="persons__list">
+                      <div class="persona">
+                        <div class="persona__img"><img src="upload/persons/1.png" alt=""></div>
+                        <div class="persona__content">
+                          <div class="persona__name">Иванов Иван Иванович</div>
+                          <div class="persona__position">генеральный директор</div>
+                          <div class="persona__txt">
+                            <p>тел. <a href="tel:84932345678">8 (4932) 34-56-78</a></p>
+                            <p>e-mail: <a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></p>
+                            <p>Перечисление контактных данных</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-d-6 col-b-12">
+                    <div class="persons__list">
+                      <div class="persona">
+                        <div class="persona__img"><img src="upload/persons/1.png" alt=""></div>
+                        <div class="persona__content">
+                          <div class="persona__name">Иванов Иван Иванович</div>
+                          <div class="persona__position">генеральный директор</div>
+                          <div class="persona__txt">
+                            <p>тел. <a href="tel:84932345678">8 (4932) 34-56-78</a></p>
+                            <p>e-mail: <a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></p>
+                            <p>Перечисление контактных данных</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="persons__list">
+                      <div class="persona">
+                        <div class="persona__img"><img src="upload/persons/1.png" alt=""></div>
+                        <div class="persona__content">
+                          <div class="persona__name">Иванов Иван Иванович</div>
+                          <div class="persona__position">генеральный директор</div>
+                          <div class="persona__txt">
+                            <p>тел. <a href="tel:84932345678">8 (4932) 34-56-78</a></p>
+                            <p>e-mail: <a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></p>
+                            <p>Перечисление контактных данных</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="persons__line">
+                <div class="row">
+                  <div class="col col-d-6 col-b-12">
+                    <div class="persons__title">Бухгалтерия:</div>
+                    <div class="persons__list">
+                      <div class="persona">
+                        <div class="persona__img"><img src="upload/persons/1.png" alt=""></div>
+                        <div class="persona__content">
+                          <div class="persona__name">Иванов Иван Иванович</div>
+                          <div class="persona__position">генеральный директор</div>
+                          <div class="persona__txt">
+                            <p>тел. <a href="tel:84932345678">8 (4932) 34-56-78</a></p>
+                            <p>e-mail: <a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></p>
+                            <p>Перечисление контактных данных</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-d-6 col-b-12">
+                    <div class="persons__title">Трудоустройство:</div>
+                    <div class="persons__list">
+                      <div class="persona">
+                        <div class="persona__img"><img src="upload/persons/1.png" alt=""></div>
+                        <div class="persona__content">
+                          <div class="persona__name">Иванов Иван Иванович</div>
+                          <div class="persona__position">генеральный директор</div>
+                          <div class="persona__txt">
+                            <p>тел. <a href="tel:84932345678">8 (4932) 34-56-78</a></p>
+                            <p>e-mail: <a href="mailto:ivanov@mail.ru">ivanov@mail.ru</a></p>
+                            <p>Перечисление контактных данных</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</main>
+
+	<footer class="footer">
+    <div class="case">
+      <div class="row">
+        <div class="footer__left col col-d-6">
+          <div class="footer__logo"><img src="upload/logo/logo-footer.png" alt=""></div>
+          <div class="footer__contacts">
+            <p>МКУ «Молодежный центр г. Иваново</p>
+            <p><a href="">(4932) 35-06-54</a><a href="">93-98-10</a></p>
+          </div>
+        </div>
+        <div class="footer__mid col col-d-3">
+          <div class="footer__form">
+            <input type="text" class="footer__text text text_default" placeholder="Ваше имя">
+            <input type="text" class="footer__text text text_default" placeholder="E-mail">
+            <button class="footer__btn btn btn_red btn_h38">Подписаться на рассылку</button>
+          </div>
+        </div>
+        <div class="footer__right col col-d-3">
+          <div class="footer__socials">
+            <ul>
+              <li><a href=""><i class="icon icon-vk"></i></a></li>
+              <li><a href=""><i class="icon icon-twitter"></i></a></li>
+              <li><a href=""><i class="icon icon-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	</footer>
+</body>
+</html>
